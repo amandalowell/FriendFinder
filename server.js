@@ -1,4 +1,5 @@
 var express = require("express");
+
 var path = require("path");
 
 
@@ -13,3 +14,7 @@ var htmlRoutes = require("./app/routing/htmlRoutes.js");
 
 app.use(apiRoutes);
 app.use(htmlRoutes);
+
+app.listen(PORT, function() {
+    console.log("listening on PORT: " + PORT);
+  });
